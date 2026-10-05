@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#fbf5f2">
+<title>Alvin &amp; Evangeline – Wedding Invitation</title>
+<meta name="description" content="Mr. B. Rajkumar Alvin &amp; Ms. A. Evangeline – Wednesday, 11 November 2026, 10.00 a.m., St. Mark Church, Katchanavilai">
+<meta property="og:title" content="Alvin &amp; Evangeline – Wedding Invitation">
+<meta property="og:description" content="Wednesday, 11 November 2026 · St. Mark Church, Katchanavilai">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<script>
+// Always start fresh at the intro: no restored scroll position, no #section in the URL, no back/forward-cache resume
+if('scrollRestoration' in history) history.scrollRestoration='manual';
+if(location.hash) history.replaceState(null,'',location.pathname+location.search);
+function toTop(){ var r=document.documentElement; r.style.scrollBehavior='auto'; window.scrollTo(0,0); r.style.scrollBehavior=''; }
+toTop();
+addEventListener('pageshow',function(e){ if(e.persisted) location.reload(); });
+</script>
+<style>
+:root{
+  --paper:#fbf5f2; --card:#fffdfb; --ink:#3f2a31; --muted:#86717a;
+  --wine:#8e1f3f; --wine-dk:#5e1029; --rose:#c8577a; --rose-dk:#a8395c; --blush:#f6d9e0; --sage:#8aa592; --sage-dk:#56705f;
+  --gold:#b8915a; --gold-dk:#8f6f33; --line:rgba(184,145,90,.55);
+  --foil:linear-gradient(100deg,#a8843f 0%,#ecd8a4 20%,#c9a45c 40%,#f6e8c0 55%,#b8914a 75%,#e4ca88 100%);
+  --foil-dk:linear-gradient(100deg,#7a5c24 0%,#b8914a 25%,#8f6f33 45%,#c9a45c 60%,#7a5c24 100%);
+  --display:'Cormorant Garamond',Garamond,'Times New Roman',serif;
+  --sans:'Jost','Avenir Next','Segoe UI',sans-serif;
+  --aw:min(100vw - 32px,560px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--display);font-size:1.2rem;line-height:1.55;font-variant-numeric:lining-nums;overflow-x:hidden}
+body.locked{overflow:hidden;height:100vh}
+
+/* blush paper with soft rose and eucalyptus glows and a faint gold lattice */
+.bg{position:fixed;inset:0;z-index:-1;background:
+  radial-gradient(90% 50% at 50% 0%,#fde8ee 0%,transparent 65%),
+  radial-gradient(70% 40% at 0% 100%,#e6efe8 0%,transparent 60%),
+  radial-gradient(70% 40% at 100% 65%,#fbe2e8 0%,transparent 60%),var(--paper)}
+.bg::after{content:"";position:absolute;inset:0;opacity:.09;background-size:56px 56px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56'%3E%3Cpath d='M28 0L56 28L28 56L0 28Z' fill='none' stroke='%23b8915a'/%3E%3Ccircle cx='28' cy='28' r='1.6' fill='%23c8577a'/%3E%3C/svg%3E")}
+#petals{position:fixed;inset:0;pointer-events:none}
+body.locked #petals{z-index:51}
+
+/* rose clusters cut from bg.png; multiply drops its white ground onto whatever sits beneath */
+.flora{position:absolute;left:50%;width:118%;mix-blend-mode:multiply;pointer-events:none;z-index:2}
+.flora i{position:absolute;inset:0;background:url(bg.png) no-repeat;background-size:100% auto}
+.flora.top{top:0;aspect-ratio:1286/520;transform:translate(-50%,-42%)}
+.flora.top i{background-position:50% 0;transform-origin:50% 30%}
+.flora.bottom{bottom:0;aspect-ratio:1286/420;transform:translate(-50%,55%)}
+.flora.bottom i{background-position:50% 100%;transform-origin:50% 70%}
+/* the artwork bleeds off its edges; fade them so the roses dissolve into the page */
+.flora i{--fx:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);-webkit-mask-composite:source-in;mask-composite:intersect}
+.flora.top i{-webkit-mask-image:linear-gradient(transparent,#000 16%),var(--fx);mask-image:linear-gradient(transparent,#000 16%),var(--fx)}
+.flora.bottom i,.flora.end i{-webkit-mask-image:linear-gradient(to top,transparent,#000 16%),var(--fx);mask-image:linear-gradient(to top,transparent,#000 16%),var(--fx)}
+
+.label{font-family:var(--sans);font-size:.68rem;font-weight:500;letter-spacing:.3em;text-transform:uppercase}
+.foil,.foil-dk{background:var(--foil);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;animation:foil 7s linear infinite}
+.foil-dk{background-image:var(--foil-dk)}
+@keyframes foil{to{background-position:-200% 0}}
+.orn{display:block;width:150px;height:12px;margin:26px auto;color:var(--gold)}
+section{padding:clamp(72px,16vw,120px) 16px;text-align:center}
+.kicker{color:var(--sage-dk)}
+.sec-title{font-size:clamp(1.7rem,6.6vw,2.6rem);font-weight:400;line-height:1.15;margin-top:10px;color:var(--wine)}
+:focus-visible{outline:2px solid var(--rose);outline-offset:4px}
+
+/* ---------- intro ---------- */
+#intro{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:24px 16px;overflow:hidden;background:
+  radial-gradient(80% 55% at 50% 48%,#fffdfb 0%,transparent 70%),radial-gradient(120% 80% at 50% 0%,#fbe3e9,transparent 70%),#f8eef0}
+.intro-box{position:absolute;inset:0;margin:auto;width:min(86vw,440px);height:min(82vh,680px);pointer-events:none}
+.intro-arch{position:absolute;inset:0;border:1px solid var(--line);border-radius:999px 999px 0 0}
+.intro-arch::before{content:"";position:absolute;inset:9px;border:1px solid rgba(184,145,90,.25);border-radius:inherit}
+.intro-box .flora{width:132%}
+.intro-box .flora.top{transform:translate(-50%,-36%)}
+.intro-box .flora.bottom{transform:translate(-50%,50%)}
+.intro-inner{position:relative;z-index:3;text-align:center;max-width:380px}
+.rings{display:block;width:150px;height:94px;margin:0 auto 22px;overflow:visible}
+.rings circle{fill:none;stroke:url(#foilG);stroke-width:1.6}
+.rings text{font-family:var(--display);font-style:italic;font-size:28px;fill:var(--wine);text-anchor:middle}
+.intro-inner .label{color:var(--muted)}
+.intro-names{font-weight:400;font-style:italic;font-size:clamp(2.5rem,10.5vw,3.8rem);line-height:1.08;margin:14px 0 12px;color:var(--wine);text-wrap:balance}
+.intro-names span{font-style:normal;font-size:.7em;color:var(--gold)}
+.intro-inner .date{color:var(--gold-dk);letter-spacing:.5em}
+#open{position:relative;isolation:isolate;overflow:hidden;margin-top:34px;padding:16px 30px;background:rgba(255,253,251,.7);border:1px solid var(--wine);color:var(--wine);cursor:pointer;
+  font:500 .72rem/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;transition:color .4s;animation:breathe 2.8s ease-in-out infinite}
+#open::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(135deg,var(--rose-dk),var(--wine) 55%,var(--wine-dk));transform:scaleY(0);transform-origin:bottom;transition:transform .4s ease}
+#open:hover,#open:focus-visible{color:#fff}
+#open:hover::before,#open:focus-visible::before{transform:scaleY(1)}
+#open:disabled{cursor:default;animation:none}
+@keyframes breathe{50%{box-shadow:0 0 0 6px rgba(200,87,122,.12),0 0 28px rgba(200,87,122,.22)}}
+@media (max-height:560px){.intro-box .flora{display:none}}
+
+/* ---------- hero: floral arch ---------- */
+.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px 16px 16px;overflow-x:clip}
+.arch-wrap{position:relative;width:var(--aw);margin:calc(var(--aw)*.2) 0 calc(var(--aw)*.21)}
+.arch{position:relative;background:var(--card);color:var(--ink);text-align:center;
+  --ah:clamp(150px,44vw,280px);border-radius:50% 50% 14px 14px / var(--ah) var(--ah) 14px 14px;
+  padding:calc(var(--aw)*.24 + 14px) clamp(18px,6vw,48px) calc(var(--aw)*.17 + 22px);box-shadow:0 30px 70px rgba(122,26,54,.12)}
+.arch::before,.arch::after{content:"";position:absolute;pointer-events:none;border:1px solid var(--line);
+  inset:10px;border-radius:50% 50% 8px 8px / calc(var(--ah) - 10px) calc(var(--ah) - 10px) 8px 8px}
+.arch::after{inset:15px;border-color:rgba(184,145,90,.22);border-radius:50% 50% 5px 5px / calc(var(--ah) - 15px) calc(var(--ah) - 15px) 5px 5px}
+.cross{display:block;width:40px;height:58px;margin:0 auto 14px;overflow:visible}
+.cross path{fill:none;stroke:var(--gold-dk);stroke-width:2;stroke-linecap:round}
+.arch .label{color:var(--muted)}
+.names{font-weight:400;font-style:italic;color:var(--wine);font-size:clamp(3rem,13vw,5rem);line-height:1;margin:14px 0 6px}
+.names span{display:block}
+.names .and{font-style:normal;font-size:.5em;line-height:1.3}
+.datebar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;margin:22px auto 0;max-width:400px}
+.datebar>.label{padding:10px 0;border-block:1px solid var(--line);color:var(--ink)}
+.datebar .day b{display:block;font-size:3.6rem;font-weight:500;line-height:.9;color:var(--wine)}
+.datebar .day .label{color:var(--gold-dk);letter-spacing:.22em}
+.hero-venue{margin-top:18px;font-size:1.15rem;color:var(--muted);font-style:italic}
+.cue{margin-top:16px;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:10px}
+.cue i{display:block;width:1px;height:38px;background:linear-gradient(var(--gold),transparent);transform-origin:top;animation:cue 2.2s ease-in-out infinite}
+@keyframes cue{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+
+/* ---------- blessing ---------- */
+.verse{max-width:30rem;margin:0 auto}
+.verse p{font-style:italic;font-size:clamp(1.8rem,7vw,2.5rem);line-height:1.2;color:var(--wine)}
+.verse cite{display:block;margin-top:14px;font-style:normal;color:var(--gold-dk)}
+.invite{max-width:26rem;margin:0 auto;font-size:1.35rem;color:var(--ink)}
+
+/* ---------- couple: two equal arches ---------- */
+.pair{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:12px;width:min(100%,600px);margin:30px auto 0}
+.partner{position:relative;display:flex;flex-direction:column;align-items:center;background:var(--card);color:var(--ink);
+  border-radius:999px 999px 10px 10px;padding:14px clamp(10px,3.5vw,24px) 26px;box-shadow:0 18px 44px rgba(122,26,54,.1)}
+.partner::before{content:"";position:absolute;inset:7px;border:1px solid var(--line);border-radius:999px 999px 6px 6px;pointer-events:none}
+.portal{position:relative;width:78%;aspect-ratio:5/6;display:grid;place-items:center;border-radius:999px 999px 4px 4px;
+  background:radial-gradient(90% 70% at 50% 30%,#b03358,var(--wine-dk));box-shadow:inset 0 0 0 1px rgba(236,216,164,.7),inset 0 0 0 5px var(--wine-dk),inset 0 0 0 6px rgba(236,216,164,.35)}
+.portal span{font-style:italic;font-size:clamp(3.4rem,15vw,5.2rem);line-height:1;padding:0 .1em}
+.partner .role{margin-top:18px;color:var(--rose-dk);font-size:.62rem}
+.pname{font-weight:400;font-style:italic;font-size:clamp(1.8rem,7.4vw,2.6rem);line-height:1.1;margin-top:6px;color:var(--wine)}
+.partner .rule{width:36px;height:1px;background:var(--gold);margin:12px 0}
+.full{font-weight:600;font-size:clamp(.98rem,3.6vw,1.12rem);line-height:1.3}
+.kin{margin-top:8px;font-style:italic;font-size:clamp(.95rem,3.4vw,1.05rem);line-height:1.35;color:var(--muted)}
+.partner .place{margin-top:auto;padding-top:12px;color:var(--sage-dk);font-size:.58rem;letter-spacing:.2em}
+.knot{position:absolute;left:50%;top:clamp(70px,22vw,130px);transform:translate(-50%,-50%);z-index:2;width:48px;height:48px;border-radius:50%;
+  display:grid;place-items:center;background:var(--wine);border:1px solid #ecd8a4;box-shadow:0 0 0 4px var(--card),0 0 0 5px var(--line)}
+.knot span{font-size:1.6rem;line-height:1;margin-top:-3px}
+
+/* ---------- order of the day ---------- */
+.stops{list-style:none;width:min(100%,460px);margin:34px auto 0}
+.stop{position:relative;padding:34px 20px 30px;background:var(--card);border:1px solid var(--line);outline:1px solid rgba(184,145,90,.22);outline-offset:-8px;box-shadow:0 18px 44px rgba(122,26,54,.08)}
+.link{position:relative;width:1px;height:64px;margin:0 auto;background:linear-gradient(transparent,var(--gold) 30%,var(--gold) 70%,transparent);transform-origin:top}
+.link::after{content:"";position:absolute;left:50%;top:50%;width:9px;height:9px;transform:translate(-50%,-50%) rotate(45deg);background:var(--blush);border:1px solid var(--gold)}
+.when{color:var(--sage-dk)}
+.when::before,.when::after{content:"";display:inline-block;width:22px;height:1px;background:currentColor;vertical-align:middle;margin:0 12px}
+.stop h3{font-weight:400;font-style:italic;font-size:clamp(2rem,8vw,2.5rem);line-height:1.15;margin-top:12px;color:var(--wine)}
+.venue{margin-top:6px;font-size:1.4rem;font-weight:600}
+.where{color:var(--muted);font-style:italic}
+.map{position:relative;isolation:isolate;overflow:hidden;display:inline-flex;align-items:center;gap:10px;margin-top:20px;padding:12px 20px;
+  border:1px solid var(--wine);color:var(--wine);text-decoration:none;font:500 .66rem/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;transition:color .35s}
+.map::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--wine);transform:scaleY(0);transform-origin:bottom;transition:transform .35s ease}
+.map:hover,.map:focus-visible{color:#fff}
+.map:hover::before,.map:focus-visible::before{transform:scaleY(1)}
+.map svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- countdown & close ---------- */
+.count{display:grid;grid-template-columns:repeat(4,1fr);width:min(100%,460px);margin:28px auto 0;border-block:1px solid var(--line)}
+.count div{padding:20px 4px 16px}
+.count div+div{border-left:1px solid rgba(184,145,90,.3)}
+.count b{display:block;font-size:clamp(2.3rem,10vw,3.2rem);font-weight:500;line-height:1;color:var(--wine);font-variant-numeric:lining-nums tabular-nums}
+.count .label{display:block;margin-top:8px;color:var(--muted);font-size:.58rem}
+.compliments{color:var(--muted);font-style:italic}
+.dear{display:inline-block;font-style:italic;font-size:clamp(2.2rem,9vw,3rem);line-height:1.2;padding:0 .1em}
+.finale{padding-bottom:0;overflow-x:clip}
+.finale .rings{margin:40px auto 10px;width:120px;height:75px}
+.finale .date{color:var(--gold-dk);letter-spacing:.5em}
+.flora.end{position:relative;left:50%;width:min(100vw,640px);margin-top:10px;aspect-ratio:1286/420;transform:translateX(-50%)}
+.flora.end i{background-position:50% 100%;transform-origin:50% 100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.foil,.foil-dk,#open,.cue i{animation:none}}
+</style>
+</head>
+<body class="locked">
+<div class="bg" aria-hidden="true"></div>
+<canvas id="petals" aria-hidden="true"></canvas>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="foilG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8f6f33"/><stop offset=".35" stop-color="#dcc083"/><stop offset=".6" stop-color="#b8915a"/><stop offset="1" stop-color="#9c7a3a"/></linearGradient>
+  </defs>
+  <symbol id="orn" viewBox="0 0 160 12"><path d="M0 6H64M96 6H160" stroke="currentColor" stroke-width=".8"/><path d="M80 1.5L84.5 6L80 10.5L75.5 6Z" fill="none" stroke="currentColor"/><circle cx="69" cy="6" r="1.3" fill="currentColor"/><circle cx="91" cy="6" r="1.3" fill="currentColor"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+</svg>
+
+<div id="intro">
+  <div class="intro-box" aria-hidden="true">
+    <div class="intro-arch"></div>
+    <div class="flora top"><i></i></div><div class="flora bottom"><i></i></div>
+  </div>
+  <div class="intro-inner">
+    <svg class="rings" viewBox="0 0 160 100" aria-hidden="true">
+      <circle id="ringA" cx="62" cy="50" r="36"/><circle id="ringE" cx="98" cy="50" r="36"/>
+      <text x="44" y="60">A</text><text x="116" y="60">E</text>
+    </svg>
+    <p class="label">The wedding of</p>
+    <h2 class="intro-names">Alvin <span>&amp;</span> Evangeline</h2>
+    <p class="label date">11 · 11 · 2026</p>
+    <button id="open" type="button" autocomplete="off">Open Invitation</button>
+  </div>
+</div>
+
+<main>
+<header class="hero">
+  <div class="arch-wrap">
+  <div class="flora top" aria-hidden="true"><i></i></div>
+  <div class="arch">
+    <svg class="cross" viewBox="0 0 40 58" aria-hidden="true"><path id="crossA" d="M20 2V56"/><path id="crossB" d="M5 18H35"/></svg>
+    <p class="label hs">The wedding celebration of</p>
+    <h1 class="names hs"><span>Alvin</span><span class="and foil-dk">&amp;</span><span>Evangeline</span></h1>
+    <div class="datebar hs">
+      <span class="label">Wednesday</span>
+      <span class="day"><b>11</b><span class="label">Nov 2026</span></span>
+      <span class="label">10.00 a.m.</span>
+    </div>
+    <p class="hero-venue hs">St. Mark Church, Katchanavilai</p>
+  </div>
+  <div class="flora bottom" aria-hidden="true"><i></i></div>
+  </div>
+  <div class="cue hs" aria-hidden="true"><span class="label">Scroll</span><i></i></div>
+</header>
+
+<section class="blessing">
+  <blockquote class="verse rise">
+    <p>“God has made everything beautiful in its time.”</p>
+    <cite class="label">Ecclesiastes 3:11</cite>
+  </blockquote>
+  <svg class="orn rise" aria-hidden="true"><use href="#orn"/></svg>
+  <p class="invite rise">Together with their families, we joyfully solicit your esteemed presence on the auspicious occasion of the marriage of</p>
+</section>
+
+<section class="couple">
+  <p class="label kicker rise">The couple</p>
+  <div class="pair">
+    <article class="partner groom">
+      <div class="portal"><span class="foil">A</span></div>
+      <p class="label role">The Groom</p>
+      <h2 class="pname">Alvin</h2>
+      <i class="rule"></i>
+      <p class="full">Mr. B. Rajkumar Alvin</p>
+      <p class="kin">S/o Mr. A. Blesing Jawahar &amp; Mrs. V. Gethzi Thayammal</p>
+      <p class="label place">Keela Sivanthipuram</p>
+    </article>
+    <div class="knot" aria-hidden="true"><span class="foil">&amp;</span></div>
+    <article class="partner bride">
+      <div class="portal"><span class="foil">E</span></div>
+      <p class="label role">The Bride</p>
+      <h2 class="pname">Evangeline</h2>
+      <i class="rule"></i>
+      <p class="full">Ms. A. Evangeline</p>
+      <p class="kin">D/o Mrs. A. Salomi Augustin</p>
+      <p class="label place">Kurumbur</p>
+    </article>
+  </div>
+</section>
+
+<section class="events">
+  <p class="label kicker rise">Order of the day</p>
+  <h2 class="sec-title rise">Wednesday, 11 November 2026</h2>
+  <ol class="stops">
+    <li class="stop rise">
+      <p class="label when">10.00 a.m.</p>
+      <h3>Holy Matrimony</h3>
+      <p class="venue">St. Mark Church</p>
+      <p class="where">Katchanavilai</p>
+      <a class="map" href="https://www.google.com/maps?vet=10CAAQoqAOahcKEwiwtYzWhaOXAxUAAAAAHQAAAAAQDg..i&amp;rlz=1C5KXLH_enIN1231IN1231&amp;sca_esv=0bdd03951d38706d&amp;mstk=AUtExfALoEsQUgNt2LLUCJUcJ05x59jf_fSKoxtGiZZ5e1jjncupS4WXt4bkVnrY6a8BsISIskxcs36CLhx3pDyEAVwWrn28kNeGrcEGmtRlV8sHM2bSrUuUFNSIRmf7QVWARovtcXrI06IVBpsHD_seSzmSrJ_NTq2gEQlGrsWH9XLOGK3nFmaZykmqJTr5EzeynXo0TNid5AbtUF5c9l-IDJijSLDHLtSN36rJNj9Oa1f899kDZ5z-68M_9hM7Dx8qScb3PKjaSM-SWMXK1pg9Iuc5&amp;pvq=CgwvZy8xam1jbGIyYmeAAQGQAQE&amp;fvr=1&amp;cs=1&amp;um=1&amp;ie=UTF-8&amp;fb=1&amp;gl=in&amp;sa=X&amp;geocode=KRVF3fDxiwM7MdntRaMqMKCz&amp;daddr=H2G5%2B8HP,+Main+Road,+Katchanavilai,+Tamil+Nadu+628618" target="_blank" rel="noopener" aria-label="Open St. Mark Church location in Google Maps"><svg aria-hidden="true"><use href="#pin"/></svg>Church Location</a>
+    </li>
+    <li class="link" aria-hidden="true"></li>
+    <li class="stop rise">
+      <p class="label when">Thereafter</p>
+      <h3>Wedding Function</h3>
+      <p class="venue">Gnanam Hall</p>
+      <p class="where">Kurumbur, Thoothukudi Dist.</p>
+      <a class="map" href="https://www.google.com/maps/place/Gnanam+Mahal,+SH+40,+Angamangalam,+Tamil+Nadu+628207/@8.5912811,78.0403566,17z/data=!3m1!4b1!4m6!3m5!1s0x3b038c684f0a977b:0x79266320e9d507ac!8m2!3d8.5912859!4d78.040362!16s%2Fg%2F11bvtknnll?entry=ttu&amp;g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" aria-label="Open Gnanam Hall location in Google Maps"><svg aria-hidden="true"><use href="#pin"/></svg>Hall Location</a>
+    </li>
+  </ol>
+</section>
+
+<section class="finale">
+  <p class="label kicker rise">Counting the days</p>
+  <div class="count rise" id="cd" aria-label="Countdown to the wedding">
+    <div><b id="d">0</b><span class="label">Days</span></div>
+    <div><b id="h">00</b><span class="label">Hours</span></div>
+    <div><b id="m">00</b><span class="label">Mins</span></div>
+    <div><b id="s">00</b><span class="label">Secs</span></div>
+  </div>
+  <svg class="orn rise" aria-hidden="true"><use href="#orn"/></svg>
+  <p class="compliments rise">With best compliments from</p>
+  <p class="dear foil-dk rise">Dear &amp; Near</p>
+  <svg class="rings rise" viewBox="0 0 160 100" aria-hidden="true">
+    <circle cx="62" cy="50" r="36"/><circle cx="98" cy="50" r="36"/>
+    <text x="44" y="60">A</text><text x="116" y="60">E</text>
+  </svg>
+  <p class="label date rise">11 · 11 · 2026</p>
+  <div class="flora end" aria-hidden="true"><i></i></div>
+</section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+(function(){
+  var body=document.body, intro=document.getElementById('intro'), btn=document.getElementById('open');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Countdown (IST)
+  var target=new Date('2026-11-11T10:00:00+05:30').getTime();
+  var d=document.getElementById('d'),h=document.getElementById('h'),m=document.getElementById('m'),s=document.getElementById('s');
+  function pad(n){return n<10?'0'+n:''+n}
+  function tick(){
+    var t=Math.max(0,target-Date.now());
+    d.textContent=Math.floor(t/864e5); h.textContent=pad(Math.floor(t/36e5)%24);
+    m.textContent=pad(Math.floor(t/6e4)%60); s.textContent=pad(Math.floor(t/1e3)%60);
+  }
+  tick(); setInterval(tick,1000);
+
+  // Rose petals drifting down, in the colours of the bouquet
+  if(!reduce) (function(){
+    var c=document.getElementById('petals'), x=c.getContext('2d'), W, H, P=[], dpr=Math.min(window.devicePixelRatio||1,2);
+    var colours=['#f4c1cd','#eba1b4','#f9dbe2','#f4c1cd','#d9718f','#a3274a','#b9cfbf'];
+    function size(){ W=innerWidth; H=innerHeight; c.width=W*dpr; c.height=H*dpr; c.style.width=W+'px'; c.style.height=H+'px'; x.setTransform(dpr,0,0,dpr,0,0); }
+    function petal(p,top){ p.x=Math.random()*W; p.y=top?-20:Math.random()*H; p.s=Math.random()*4+4; p.vy=Math.random()*.5+.35; p.vx=(Math.random()-.5)*.4;
+      p.rot=Math.random()*6.3; p.vr=(Math.random()-.5)*.03; p.t=Math.random()*6.3; p.c=colours[Math.floor(Math.random()*colours.length)]; return p; }
+    size(); addEventListener('resize',size);
+    for(var i=0;i<26;i++) P.push(petal({},false));
+    (function loop(){
+      x.clearRect(0,0,W,H);
+      for(var i=0;i<P.length;i++){
+        var p=P[i]; p.t+=.02; p.y+=p.vy; p.x+=p.vx+Math.sin(p.t)*.5; p.rot+=p.vr;
+        if(p.y>H+20) petal(p,true);
+        x.save(); x.translate(p.x,p.y); x.rotate(p.rot); x.scale(1,.35+.65*Math.abs(Math.cos(p.t*1.3)));
+        x.beginPath(); x.moveTo(0,-p.s); x.quadraticCurveTo(p.s,-p.s*.1,0,p.s); x.quadraticCurveTo(-p.s,-p.s*.1,0,-p.s);
+        x.globalAlpha=.85; x.fillStyle=p.c; x.fill(); x.restore();
+      }
+      requestAnimationFrame(loop);
+    })();
+  })();
+
+  function reveal(){ toTop(); intro.remove(); body.classList.remove('locked'); if(window.ScrollTrigger) ScrollTrigger.refresh(); }
+  if(!window.gsap || reduce){ btn.onclick=reveal; return; }
+  gsap.registerPlugin(ScrollTrigger);
+
+  function undraw(sel){ document.querySelectorAll(sel).forEach(function(p){ var l=p.getTotalLength(); gsap.set(p,{strokeDasharray:l,strokeDashoffset:l}); }); }
+
+  // Intro: the arch rises, the two rings draw themselves and interlock
+  undraw('#ringA,#ringE');
+  gsap.timeline()
+    .from('.intro-arch',{scaleY:0,transformOrigin:'50% 100%',opacity:0,duration:1.6,ease:'expo.out'})
+    .from('.intro-box .flora i',{scale:.8,opacity:0,duration:2,stagger:.2,ease:'expo.out'},.2)
+    .to('#ringA',{strokeDashoffset:0,duration:1.4,ease:'power2.inOut'},.3)
+    .to('#ringE',{strokeDashoffset:0,duration:1.4,ease:'power2.inOut'},.3)
+    .from('.rings text',{opacity:0,y:6,duration:.8},1.3)
+    .from('.intro-inner > :not(.rings)',{opacity:0,y:18,duration:1,stagger:.15,ease:'power3.out'},1);
+
+  // Hero waits behind the intro
+  undraw('#crossA,#crossB');
+  gsap.set('.hero .arch',{clipPath:'inset(100% 0% 0% 0%)'});
+  gsap.set('.hs',{opacity:0,y:20});
+  gsap.set('.hero .flora i',{opacity:0,scale:.8});
+
+  function heroIn(){
+    gsap.timeline({defaults:{ease:'power3.out'}})
+      .to('.hero .arch',{clipPath:'inset(0% 0% 0% 0%)',duration:1.4,ease:'expo.inOut',clearProps:'clipPath'})
+      .to('#crossA',{strokeDashoffset:0,duration:.6,ease:'power2.inOut'},.8)
+      .to('#crossB',{strokeDashoffset:0,duration:.45,ease:'power2.inOut'},1.1)
+      .to('.hero .flora i',{opacity:1,scale:1,duration:2.2,stagger:.25,ease:'expo.out'},.7)
+      .to('.hs',{opacity:1,y:0,duration:1,stagger:.14},1)
+      .from('.datebar>.label',{clipPath:'inset(0 50% 0 50%)',duration:1,ease:'power2.inOut'},1.4);
+  }
+
+  btn.addEventListener('click',function(){
+    btn.disabled=true;
+    gsap.timeline({onComplete:reveal})
+      .to('.rings',{scale:1.25,rotation:180,opacity:0,duration:1,ease:'power2.in'})
+      .to('.intro-inner > :not(.rings)',{opacity:0,y:-16,duration:.6,stagger:.06},0)
+      .to('.intro-arch',{scaleY:1.6,opacity:0,duration:1.1,ease:'power2.in'},.1)
+      .to('.intro-box .flora.top i',{yPercent:-40,opacity:0,duration:1.1,ease:'power2.in'},.1)
+      .to('.intro-box .flora.bottom i',{yPercent:40,opacity:0,duration:1.1,ease:'power2.in'},.1)
+      .to('#intro',{clipPath:'inset(0% 0% 100% 0%)',duration:1.2,ease:'power3.inOut'},.7)
+      .add(heroIn,1.1);
+  });
+
+  // Scroll reveals
+  gsap.utils.toArray('.rise').forEach(function(el){
+    gsap.from(el,{opacity:0,y:36,duration:1.1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%'}});
+  });
+
+  // Groom and bride rise together, mirror images of each other
+  gsap.timeline({scrollTrigger:{trigger:'.pair',start:'top 78%'}})
+    .from('.groom',{x:-40,opacity:0,duration:1.2,ease:'power3.out'},0)
+    .from('.bride',{x:40,opacity:0,duration:1.2,ease:'power3.out'},0)
+    .from('.portal span',{scale:.6,opacity:0,duration:1,ease:'back.out(1.8)'},.5)
+    .from('.knot',{scale:0,rotation:-120,duration:.9,ease:'back.out(2)'},.8);
+
+  gsap.from('.link',{scaleY:0,duration:1,ease:'power2.inOut',scrollTrigger:{trigger:'.link',start:'top 85%'}});
+  gsap.from('.flora.end i',{opacity:0,scale:.85,duration:2,ease:'expo.out',scrollTrigger:{trigger:'.flora.end',start:'top 95%'}});
+  // gentle breeze through the hero roses
+  gsap.to('.hero .flora.top i',{rotation:1.2,duration:4.5,repeat:-1,yoyo:true,ease:'sine.inOut',delay:3});
+  gsap.to('.hero .flora.bottom i',{rotation:-1,duration:5.5,repeat:-1,yoyo:true,ease:'sine.inOut',delay:3.5});
+  gsap.from('.count div',{y:24,opacity:0,stagger:.1,duration:.8,ease:'power3.out',scrollTrigger:{trigger:'.count',start:'top 85%'}});
+})();
+</script>
+</body>
+</html>
